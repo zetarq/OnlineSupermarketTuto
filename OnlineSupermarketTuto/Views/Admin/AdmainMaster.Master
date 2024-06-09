@@ -1,4 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdmainMaster.Master.cs" Inherits="blogsql.Views.Site1" %>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <!DOCTYPE html>
 
@@ -19,9 +22,15 @@
         lable{
             color:white;
         }
-      
-
-
+        span{
+             color:white;
+        }
+        li{
+            color:white;
+        }
+        .sidebar-menu li a {
+            color: white;
+        }
     </style>
     <link href="../../Assets/lib/css/bootstrap.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -35,23 +44,81 @@
                     <img  src="../../Assets/img/shop/kaifazhepingtai.png" id="logo" style="height:50px ;width:50px" />
                     <div class="p-2">
                         <div style="height:150px">
+                       </div>
+                </div>
+                    </div>
+                <div class="mb-3">
+               <ul class="sidebar-menu list-unstyled">         
+              <li class="sidebar-list-item"><a href="index2.aspx" class="sidebar-link text-muted " data-toggle="collapse" data-target="#home1" aria-expanded="false" aria-controls="home">
+                         <i class="o-home-1 mr-3 text-black"></i>
+                 
+                 <img src="../../Assets/img/shop/shanghuguanli.png" style="height: 30px; width: 30px" />
+                 <span>商品管理</span>
+                 <div id="home1" class="collapse">
+                     <ul class="sidebar-menu list-unstyled border-left border-primary border-thick   ">
+                         <li class="sidebar-list-item"><a href="ProductView.aspx" class="sidebar-link  pl-lg-5">查看商品</a></li>
+                         <li class="sidebar-list-item"><a href="products.aspx" class="sidebar-link  pl-lg-5">编辑商品</a></li>
+                        
+                       
+                     </ul>
+                    
+                 </div>
 
-                        </div>
-                <div class="mb-3">
-                        <img src="../../Assets/img/shop/shanghuguanli.png" style="height: 30px; width: 30px" />
-                        <a href="products.aspx"><lable>商品</lable></a>
+              </li>
+                    </ul>
                 </div>
                 <div class="mb-3">
+                     <ul class="sidebar-menu list-unstyled">         
+                     <li class="sidebar-list-item"><a href="index2.aspx" class="sidebar-link text-muted " data-toggle="collapse" data-target="#home2" aria-expanded="false" aria-controls="home">
+                        <i class="o-home-1 mr-3 text-black"></i>
                         <img src="../../Assets/img/shop/huodongguanlipingtai.png" style="height: 30px; width: 30px" />
-                        <a href="Manufactors.aspx"><lable>生产商</lable></a>
+                        <span>厂商管理</span>
+                       <div id="home2" class="collapse">
+                           <ul class="sidebar-menu list-unstyled border-left border-primary border-thick   ">
+                               <li class="sidebar-list-item"><a href="Manufactorview.aspx" class="sidebar-link  pl-lg-5">查看厂商</a></li>
+                               <li class="sidebar-list-item"><a href="Manufactors.aspx" class="sidebar-link  pl-lg-5">编辑厂商</a></li>
+          
+         
+                           </ul>
+                       </div>
+                       </li>
+                         </ul>
                 </div>
                 <div class="mb-3">
-                        <img src="../../Assets/img/shop/jifenzhongxin.png" style="height: 30px; width: 30px" />
-                        <a href="Categories.aspx"><lable>类目</lable></a>
+                     <ul class="sidebar-menu list-unstyled">         
+                    <li class="sidebar-list-item"><a href="index2.aspx" class="sidebar-link text-muted " data-toggle="collapse" data-target="#home4" aria-expanded="false" aria-controls="home">
+                         <i class="o-home-1 mr-3 text-black"></i>
+                     <img src="../../Assets/img/shop/jifenzhongxin.png" style="height: 30px; width: 30px" />          
+                     <span>类目管理</span>
+                     <div id="home4" class="collapse">
+                        <ul class="sidebar-menu list-unstyled border-left border-primary border-thick   ">
+                            <li class="sidebar-list-item"><a href="CategoryView.aspx" class="sidebar-link  pl-lg-5">查看类目</a></li>
+                            <li class="sidebar-list-item"><a href="Categories.aspx" class="sidebar-link  pl-lg-5">编辑类目</a></li>
+          
+         
+                        </ul>
+                    </div>
+                    </li>
+                         </ul>
                 </div>
                 <div class="mb-3">
-                        <img src="../../Assets/img/shop/huiyuanzhongxin.png" style="height: 30px; width: 30px" />
-                        <a href="Customers.aspx"><lable>用户</lable></a>
+                        
+                        <ul class="sidebar-menu list-unstyled">         
+                   <li class="sidebar-list-item"><a href="index2.aspx" class="sidebar-link text-muted " data-toggle="collapse" data-target="#home3" aria-expanded="false" aria-controls="home">
+                        <i class="o-home-1 mr-3 text-black"></i>
+                       
+                            <img src="../../Assets/img/shop/huiyuanzhongxin.png" style="height: 30px; width: 30px" />
+                        <span>用户管理</span>
+                       <div id="home3" class="collapse">
+                           <ul class="sidebar-menu list-unstyled border-left border-primary border-thick   ">
+                               <li class="sidebar-list-item"><a href="CustomerView.aspx" class="sidebar-link  pl-lg-5">查看用户</a></li>
+                               <li class="sidebar-list-item"><a href="Customers.aspx" class="sidebar-link  pl-lg-5">编辑用户</a></li>
+          
+         
+                           </ul>
+                       </div>
+                       </li>
+                            </ul>
                 </div>
                         <div style="height:300px">
 
@@ -69,17 +136,18 @@
                     </div>
                     <div class="col-10">
                          <form id="form2" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="MyContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+                            <div>
+                                 <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                                 </asp:ContentPlaceHolder>
+                            </div>
+                         </form>
                    
                     </div>
           
             
         </div>
-    </div>
-    
+   
+   </div>
+   
 </body>
 </html>

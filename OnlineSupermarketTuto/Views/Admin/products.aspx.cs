@@ -16,7 +16,7 @@ namespace blogsql.Views.Admin
             Con = new Models.Functions();
             if(! IsPostBack)
             {
-                ShowProducts();
+               
                 GetCategories();
                 GetManufacts();
             }

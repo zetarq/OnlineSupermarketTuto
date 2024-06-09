@@ -13,7 +13,7 @@ namespace blogsql.Views.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             Con = new Models.Functions();
-            ShowManufactors();//加载页面时就调用showManufactors以便利用gridview控件显示表项
+           
         }
         private  void  ShowManufactors()
         {

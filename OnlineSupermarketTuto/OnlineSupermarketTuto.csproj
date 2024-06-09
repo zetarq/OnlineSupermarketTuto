@@ -149,9 +149,13 @@
     <Content Include="Assets\Lib\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Views\Admin\Categories.aspx" />
+    <Content Include="Views\Admin\CategoryView.aspx" />
     <Content Include="Views\Admin\Customers.aspx" />
+    <Content Include="Views\Admin\CustomerView.aspx" />
     <Content Include="Views\Admin\Manufactors.aspx" />
+    <Content Include="Views\Admin\Manufactorview.aspx" />
     <Content Include="Views\Admin\products.aspx" />
+    <Content Include="Views\Admin\ProductView.aspx" />
     <Content Include="Views\Customer\Billing.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\Register.aspx" />
@@ -177,12 +181,26 @@
     <Compile Include="Views\Admin\Categories.aspx.designer.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\CategoryView.aspx.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CategoryView.aspx.designer.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\Customers.aspx.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Admin\Customers.aspx.designer.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Manufactors.aspx.cs">
       <DependentUpon>Manufactors.aspx</DependentUpon>
@@ -191,12 +209,26 @@
     <Compile Include="Views\Admin\Manufactors.aspx.designer.cs">
       <DependentUpon>Manufactors.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\Manufactorview.aspx.cs">
+      <DependentUpon>Manufactorview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Manufactorview.aspx.designer.cs">
+      <DependentUpon>Manufactorview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\products.aspx.cs">
       <DependentUpon>products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Admin\products.aspx.designer.cs">
       <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Customer\Billing.aspx.cs">
       <DependentUpon>Billing.aspx</DependentUpon>
