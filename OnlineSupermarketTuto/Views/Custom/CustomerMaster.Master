@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="blogsql.Views.Custom.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        *{
+            font-family:STXihei
+        }
+        #left{
+            color:white;
+            height:725px;
+            background-color:teal;
+            
+        }
+        lable{
+            color:white;
+        }
+      
+
+
+    </style>
+    <link href="../../Assets/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height:70px">
+                    <img  src="../../Assets/img/shop/zhifuzhongxin.png" id="logo" style="height:50px ;width:50px" />
+                    <div class="p-2">
+                        <div style="height:150px">
+
+                        </div>
+                <div class="mb-3">
+                    
+                        <img src="../../Assets/img/shop/shanghuguanli.png" style="height: 30px; width: 30px" />
+                        <a href="#"><lable>订单结算</lable></a>
+                    
+                </div>
+                <div class="mb-3">
+                    <!--    
+                    <img src="../../Assets/img/shop/huodongguanlipingtai.png" style="height: 30px; width: 30px" />
+                        <a href="Manufactors.aspx"><lable>生产商</lable></a>
+                    -->
+                </div>
+                <div class="mb-3">
+                    <!--   
+                    <img src="../../Assets/img/shop/jifenzhongxin.png" style="height: 30px; width: 30px" />
+                        <a href="Categories.aspx"><lable>类目</lable></a>
+                    -->
+                </div>
+                <div class="mb-3">
+                    <!--
+                        <img src="../../Assets/img/shop/huiyuanzhongxin.png" style="height: 30px; width: 30px" />
+                        <a href="Customers.aspx"><lable>用户</lable></a>
+                    -->
+                </div>
+                        <div style="height:300px">
+
+                        </div>
+                <div class="mb-10">
+                        <img src="../../Assets/img/shop/weixiufuwuzhongxin-yingwen.png" style="height: 30px; width: 30px" />
+                        <a href="../login.aspx"><lable>退出</lable></a>
+                </div>
+                    </div>
+                      
+
+                </div >
+             
+                        
+                    </div>
+                    <div class="col-10">
+                         <form id="form2" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+                   
+                    </div>
+          
+            
+        </div>
+    </div>
+    
+</body>
+</html>
